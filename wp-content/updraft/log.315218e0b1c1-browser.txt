@@ -1,0 +1,61 @@
+0000.028 (R) [notice] Looking for db archive: file name: backup_2018-11-14-0214_Balance6_71bda087de4d-db.gz
+0000.028 (R) [notice] Archive is expected to be size: 200.4 KB: OK
+0000.029 (R) [notice] Looking for plugins archive: file name: backup_2018-11-14-0214_Balance6_71bda087de4d-plugins.zip
+0000.029 (R) [notice] Archive is expected to be size: 17390.9 KB: OK
+0000.030 (R) [notice] Looking for themes archive: file name: backup_2018-11-14-0214_Balance6_71bda087de4d-themes.zip
+0000.030 (R) [notice] Archive is expected to be size: 2871.1 KB: OK
+0000.031 (R) [notice] Looking for uploads archive: file name: backup_2018-11-14-0214_Balance6_71bda087de4d-uploads.zip
+0000.031 (R) [notice] Archive is expected to be size: 27362.3 KB: OK
+0000.031 (R) [notice] Looking for uploads archive: file name: backup_2018-11-14-0214_Balance6_71bda087de4d-uploads2.zip
+0000.031 (R) [notice] Archive is expected to be size: 3377.4 KB: OK
+0000.032 (R) [notice] Looking for others archive: file name: backup_2018-11-14-0214_Balance6_71bda087de4d-others.zip
+0000.032 (R) [notice] Archive is expected to be size: 4 KB: OK
+0000.033 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.035 (R) [notice] Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-db.gz, 0.2 Mb)
+0000.037 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.063 (R) [notice] Enabling Maintenance mode&#8230;
+0000.064 (R) [notice] Backup of: http://balance6.staging.wpengine.com
+0000.082 (R) [notice] Content URL: http://balance6.staging.wpengine.com/wp-content
+0000.082 (R) [notice] Uploads URL: http://balance6.staging.wpengine.com/wp-content/uploads
+0000.082 (R) [notice] Old table prefix: wp_
+0000.082 (R) [notice] Site information: multisite = 0
+0000.083 (R) [notice] Found SET NAMES utf8, but changing to utf8mb4 as suggested by WPDB::determine_charset().
+0000.083 (R) [notice] New table prefix: wp_
+0000.085 (R) [notice] Processing table (InnoDB):  wp_options
+0000.307 (R) [notice] Processing table (InnoDB):  wp_users
+0000.327 (R) [notice] Processing table (InnoDB):  wp_usermeta
+0000.340 (R) [notice] Processing table (InnoDB):  wp_commentmeta
+0000.351 (R) [notice] Processing table (InnoDB):  wp_comments
+0000.364 (R) [notice] Processing table (InnoDB):  wp_links
+0000.377 (R) [notice] Processing table (InnoDB):  wp_postmeta
+0000.398 (R) [notice] Processing table (InnoDB):  wp_posts
+0000.418 (R) [notice] Processing table (InnoDB):  wp_term_relationships
+0000.433 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy
+0000.449 (R) [notice] Processing table (InnoDB):  wp_termmeta
+0000.465 (R) [notice] Processing table (InnoDB):  wp_terms
+0000.479 (R) [notice] Processing table (InnoDB):  wp_hustle_modules
+0000.493 (R) [notice] Processing table (InnoDB):  wp_hustle_modules_meta
+0000.507 (R) [notice] Disabling Maintenance mode&#8230;
+0000.507 (R) [notice] Finished: lines processed: 49 in 0.47 seconds
+0000.508 (R) [notice] Cleaning up rubbish...
+0000.514 (R) [notice] Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-plugins.zip, 17 Mb)
+0003.472 (R) [notice] Moving old data out of the way...
+0004.133 (R) [notice] Moving unpacked backup into place...
+0006.706 (R) [notice] Cleaning up rubbish...
+0006.710 (R) [notice] Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-themes.zip, 2.8 Mb)
+0007.085 (R) [notice] Moving old data out of the way...
+0007.191 (R) [notice] Moving unpacked backup into place...
+0007.415 (R) [notice] Cleaning up rubbish...
+0007.418 (R) [notice] Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-uploads.zip, 26.7 Mb)
+0007.879 (R) [notice] Moving old data out of the way...
+0007.881 (R) [notice] Moving unpacked backup into place...
+0007.926 (R) [notice] Cleaning up rubbish...
+0007.927 (R) [notice] Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-uploads2.zip, 3.3 Mb)
+0008.004 (R) [notice] Moving unpacked backup into place...
+0008.033 (R) [notice] Cleaning up rubbish...
+0008.035 (R) [notice] Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-others.zip, 0 Mb)
+0008.056 (R) [notice] Cleaning up rubbish...
+0008.056 (R) [notice] Error: Failed to delete working directory after restoring. (/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content/upgrade/49ba00b3)
+0008.057 (R) [notice] Files found:
+0008.057 (R) [notice] * upgrade
+0008.069 (R) [notice] Restore successful!

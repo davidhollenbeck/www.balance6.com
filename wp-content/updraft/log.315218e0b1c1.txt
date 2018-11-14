@@ -1,0 +1,78 @@
+0000.004 () Opened log file at time: Wed, 14 Nov 2018 02:18:16 +0000 on http://balance6:8888
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.15.3 WP: 4.9.8 PHP: 7.2.10 (apache2handler, Darwin Davids-MacBook-Pro.local 17.7.0 Darwin Kernel Version 17.7.0: Fri Jul  6 19:54:51 PDT 2018; root:xnu-4570.71.3~2/RELEASE_X86_64 x86_64) MySQL: 5.7.23 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 23.9M | 10M) multisite: N openssl: OpenSSL 1.0.2o  27 Mar 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 400378.8 MB
+0000.005 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.033 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.035 () Entity: db
+0000.035 () restore_backup(backup_file=backup_2018-11-14-0214_Balance6_71bda087de4d-db.gz, type=db, info=a:0:{}, last_one=)
+0000.035 () Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-db.gz, 0.2 Mb)
+0000.037 () Database successfully unpacked
+0000.037 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.037 () Using direct MySQL access; value of use_mysqli is: 1
+0000.063 () Max packet size: 32 MB
+0000.063 () Entering maintenance mode
+0000.063 () Enabling Maintenance mode&#8230;
+0000.064 () Backup of: http://balance6.staging.wpengine.com
+0000.082 () Content URL: http://balance6.staging.wpengine.com/wp-content
+0000.082 () Uploads URL: http://balance6.staging.wpengine.com/wp-content/uploads
+0000.082 () Old table prefix: wp_
+0000.082 () Site information: multisite=0
+0000.083 () New table prefix: wp_
+0000.085 () Processing table (InnoDB): wp_options
+0000.143 () Restoring prior UD configuration (table: wp_options; keys: 94)
+0000.307 () Processing table (InnoDB): wp_users
+0000.326 () Processing table (InnoDB): wp_usermeta
+0000.339 () Processing table (InnoDB): wp_commentmeta
+0000.351 () Processing table (InnoDB): wp_comments
+0000.364 () Processing table (InnoDB): wp_links
+0000.377 () Processing table (InnoDB): wp_postmeta
+0000.398 () Processing table (InnoDB): wp_posts
+0000.418 () Processing table (InnoDB): wp_term_relationships
+0000.433 () Processing table (InnoDB): wp_term_taxonomy
+0000.449 () Processing table (InnoDB): wp_termmeta
+0000.465 () Processing table (InnoDB): wp_terms
+0000.478 () Processing table (InnoDB): wp_hustle_modules
+0000.493 () Processing table (InnoDB): wp_hustle_modules_meta
+0000.507 () Unlocking database and leaving maintenance mode
+0000.507 () Disabling Maintenance mode&#8230;
+0000.507 () Finished: lines processed: 49 in 0.47 seconds
+0000.508 () Cleaning up rubbish...
+0000.514 () Entity: plugins
+0000.514 () restore_backup(backup_file=backup_2018-11-14-0214_Balance6_71bda087de4d-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:76:"/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0000.514 () Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-plugins.zip, 17 Mb)
+0003.472 () Moving old data: filesystem method / updraft_dir is potentially possible
+0003.472 () Moving old data: can potentially use wp_filesystem method / -old
+0003.472 () Moving old data out of the way...
+0004.131 () Top-level entities being moved: index.php, akismet, updraftplus, hello.php
+0004.133 () Moving unpacked backup into place...
+0006.698 () Top-level entities being moved: index.php, akismet, wpmudev-updates, hd-quiz, ari-cf7-connector, better-search-replace, contact-form-7, updraftplus, hustle, backupbuddy
+0006.706 () Cleaning up rubbish...
+0006.710 () Entity: themes
+0006.710 () restore_backup(backup_file=backup_2018-11-14-0214_Balance6_71bda087de4d-themes.zip, type=themes, info=a:2:{s:4:"path";s:75:"/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0006.710 () Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-themes.zip, 2.8 Mb)
+0007.084 () Moving old data: filesystem method / updraft_dir is potentially possible
+0007.085 () Moving old data: can potentially use wp_filesystem method / -old
+0007.085 () Moving old data out of the way...
+0007.189 () Top-level entities being moved: twentyseventeen, twentysixteen, twentyfifteen, index.php
+0007.191 () Moving unpacked backup into place...
+0007.412 () Top-level entities being moved: twentyseventeen, twentysixteen, twentyfifteen, index.php, enterprise-pro, genesis
+0007.415 () Cleaning up rubbish...
+0007.417 () Entity: uploads
+0007.417 () restore_backup(backup_file=backup_2018-11-14-0214_Balance6_71bda087de4d-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:76:"/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0007.418 () Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-uploads.zip, 26.7 Mb)
+0007.879 () Moving old data: filesystem method / updraft_dir is potentially possible
+0007.879 () Moving old data: can potentially use wp_filesystem method / -old
+0007.879 () Moving old data out of the way...
+0007.881 () Moving unpacked backup into place...
+0007.926 () Cleaning up rubbish...
+0007.927 () restore_backup(backup_file=backup_2018-11-14-0214_Balance6_71bda087de4d-uploads2.zip, type=uploads, info=a:2:{s:4:"path";s:76:"/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0007.927 () Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-uploads2.zip, 3.3 Mb)
+0008.004 () Moving unpacked backup into place...
+0008.033 () Cleaning up rubbish...
+0008.035 () Entity: others
+0008.035 () restore_backup(backup_file=backup_2018-11-14-0214_Balance6_71bda087de4d-others.zip, type=others, info=a:2:{s:4:"path";s:68:"/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0008.035 () Unpacking backup... (backup_2018-11-14-0214_Balance6_71bda087de4d-others.zip, 0 Mb)
+0008.055 () Cleaning up rubbish...
+0008.056 () Error: Failed to delete working directory after restoring. (/Users/davidhollenbeck/Documents/Staging/www.balance6.com/wp-content/upgrade/49ba00b3)
+0008.069 () Restore successful!
+0008.069 () Restore successful

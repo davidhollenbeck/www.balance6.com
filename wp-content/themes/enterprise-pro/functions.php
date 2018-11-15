@@ -101,3 +101,173 @@ function sp_footer_creds_filter( $creds ) {
 	$creds = 'Website by <a href="https://10plusbrand.com" style="color:#31b2ed;">10+ Brand</a>';
 	return $creds;
 }
+
+function balance_boxes() {
+    ?>
+    <div class="inner-wrap">
+        <!-- <p style="text-align:center;"><span class="text-logo"><img src="<?php  echo home_url(); ?>/wp-content/uploads/2018/09/Balance-6-TextOnly.png" /></span></p> -->
+        <div class="home-box-container first box-money">
+            <h4>Money:</h4>
+            <h6 class="hover-instructions">Hover mouse to learn more</h6>
+            <p>Productivity</p>
+            <p>Profits</p>
+            <p>Leadership</p>
+            <p>Staff motivation & retention</p>
+            <p>Strategic planning</p>
+            <p>Money saving goals</p>
+        </div>
+
+        <div class="home-box-container box-health">
+            <h4>Health:</h4>
+            <h6 class="hover-instructions">Hover mouse to learn more</h6>
+            <p>Diet</p>
+            <p>Exercise</p>
+            <p>Sleep</p>
+            <p>Weight management</p>
+            <p>Energy level</p>
+        </div>
+
+        <div class="home-box-container box-relationship">
+            <h4>Relationship:</h4>
+            <h6 class="hover-instructions">Hover mouse to learn more</h6>
+            <p>Self esteem</p>
+            <p>Overcoming negativity</p>
+            <p>With family, significant other, kids</p>
+            <p>With business associates, employees</p>
+            <p>Communication, Team-building</p>
+        </div>
+
+        <div class="clear6"></div>
+
+        <div class="home-box-container first box-time">
+            <h4>Time Management:</h4>
+            <h6 class="hover-instructions">Hover mouse to learn more</h6>
+            <p>Delegating work</p>
+            <p>Vacation & downtime scheduling</p>
+            <p>Time blocking</p>
+            <p>Work/Home boundaries</p>
+        </div>
+
+        <div class="home-box-container box-self">
+            <h4>Self Improvement:</h4>
+            <h6 class="hover-instructions">Hover mouse to learn more</h6>
+            <p>Continuing education</p>
+            <p>Personal goals</p>
+            <p>Talent Development</p>
+            <p>New Skills</p>
+            <p>Hobbies & Interests</p>
+        </div>
+
+        <div class="home-box-container box-power">
+            <h4>Higher Power:</h4>
+            <h6 class="hover-instructions">Hover mouse to learn more</h6>
+            <p>Spirituality</p>
+            <p>Charity</p>
+            <p>Community service</p>
+            <p>Meditation/Prayer</p>
+            <p>Support a cause</p>
+        </div>
+
+        <div class="clear6"></div>
+    </div>
+
+    <?php
+}
+
+function b6_wys($content) {
+    if( $content ): ?>
+        <div class="b6-inner-row b6-wys">
+            <div class="b6-wys-inner">
+                <?php echo $content; ?>
+            </div>
+        </div>
+        <div class="clear6"></div>
+    <?php endif;
+}
+
+function b6_vidloop($video_id) {
+    if( $video_id): ?>
+    <div class="b6-inner-row b6-vidloop">
+        <iframe class="b6-vidloop-container" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/<?php echo $video_id; ?>?autoplay=1&origin=http://balance6.com&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&playlist=<?php echo $video_id; ?>"></iframe>
+    </div>
+    <?php endif;
+}
+
+function b6_button($button) {
+    $link = $button['link'];
+    $text = $button['text'];
+    if($link && $text): ?>
+    <div class="b6-inner-row b6-button-container">
+        <a href="<?php echo $link; ?>" class="button"><?php echo $text; ?></a>
+    </div>
+    <?php endif;
+}
+
+function b6_cta() {
+    ?>
+    <div class="inner-wrap">
+        <h2 style="text-align:center; margin-bottom:35px;">Get A Free Assessment</h2>
+
+        <p style="text-align:center;"><a href="#" class="button assessment-trigger" target="_blank">Download</a></p>
+    </div>
+    <?php
+
+}
+
+function b6_hero($hero) {
+
+    $image = $hero['image'];
+    $headline = $hero['headline'];
+    $sub_headline = $hero['sub_headline'];
+    $link_text = $hero['link_text'];
+    $link = $hero['link'];
+    $link_class = $hero['link_class'];
+    $image_position = $hero['image_position'];
+
+    if ($image && $headline):
+        ?>
+        <div class="hero services-hero image-separator-<?php echo $image_position; ?>" style="background-image:url('<?php echo $image; ?>')";>
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1><?php echo $headline; ?></h1>
+                    <p><?php echo $sub_headline; ?></p>
+                    <a href="<?php echo $link; ?>" class="button <?php echo $link_class; ?>"><?php echo $link_text; ?></a>
+                </div>
+            </div>
+        </div>
+        <div class="clear6"></div>
+    <?php endif;
+}
+
+function b6_footer($group) {
+    $image = $group['image'];
+    $sub_headline = $group['sub_headline'];
+    $headline = $group['headline'];
+    $link = $group['link'];
+    $link_text = $group['link_text'];
+    $link_class = $group['link_class'];
+    $image_position = $group['image_position'];
+
+    if ($image && $headline):
+    ?>
+    <div class="image-separator-fs image-separator-<?php echo $image_position; ?>" style="background-image: url('<?php  echo $image; ?>'); background-attachment:initial; height:800px;">
+        <div class="contact-info">
+            <?php echo $sub_headline; ?>
+        </div>
+        <div class="image-cta">
+            <h1><?php echo $headline; ?></h1><br/>
+            <a href="<?php echo $link; ?>" class="button <?php echo $link_class; ?>" target="_blank"><?php echo $link_text; ?></a>
+        </div>
+    </div>
+
+    <?php endif;
+
+}
+
+function tagline_bullets($class) {
+    ?>
+    <div class="tagline-bullets <?php echo $class; ?>">
+        <h2>Higher Productivity | Better Relationships | More Profits </h2>
+    </div>
+    <?php
+}

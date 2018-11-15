@@ -43,11 +43,8 @@ function enterprise_body_class( $classes ) {
 
 function home_hero() {
    ?>
-		<div class="home-hero" style="background-image:url('<?php  echo home_url(); ?>/wp-content/uploads/2018/10/Home-Header-List.jpg')";>
+		<div class="hero home-hero" style="background-image:url('<?php  echo home_url(); ?>/wp-content/uploads/2018/10/Home-Header-List.jpg')";>
 			<div class="hero-inner">
-                <a href="/" class="hero-logo">
-                    <img src="<?php  echo home_url(); ?>/wp-content/uploads/2018/09/Balance-6_Final_500.png" />
-                </a>
                 <div class="hero-text">
                     <h1>Better Life, <br>Better Business</h1>
                     <p>Business and life coaching</p>
@@ -136,79 +133,7 @@ function home_videos() {
 
 add_action('genesis_before_content_sidebar_wrap', 'home_videos', 11);
 
-function home_boxes_one() {
-	?>
-        <div class="inner-wrap">
-        <!-- <p style="text-align:center;"><span class="text-logo"><img src="<?php  echo home_url(); ?>/wp-content/uploads/2018/09/Balance-6-TextOnly.png" /></span></p> -->
-        <div class="home-box-container first box-money">
-            <h4>Money:</h4>
-            <h6 class="hover-instructions">Hover mouse to learn more</h6>
-            <p>Productivity</p>
-            <p>Profits</p>
-            <p>Leadership</p>
-            <p>Staff motivation & retention</p>
-            <p>Strategic planning</p>
-            <p>Money saving goals</p>
-        </div>
-
-        <div class="home-box-container box-health">
-            <h4>Health:</h4>
-            <h6 class="hover-instructions">Hover mouse to learn more</h6>
-            <p>Diet</p>
-            <p>Exercise</p>
-            <p>Sleep</p>
-            <p>Weight management</p>
-            <p>Energy level</p>
-        </div>
-
-        <div class="home-box-container box-relationship">
-            <h4>Relationship:</h4>
-            <h6 class="hover-instructions">Hover mouse to learn more</h6>
-            <p>Self esteem</p>
-            <p>Overcoming negativity</p>
-            <p>With family, significant other, kids</p>
-            <p>With business associates, employees</p>
-            <p>Communication, Team-building</p>
-        </div>
-
-        <div class="clear6"></div>
-
-        <div class="home-box-container first box-time">
-            <h4>Time Management:</h4>
-            <h6 class="hover-instructions">Hover mouse to learn more</h6>
-            <p>Delegating work</p>
-            <p>Vacation & downtime scheduling</p>
-            <p>Time blocking</p>
-            <p>Work/Home boundaries</p>
-        </div>
-
-        <div class="home-box-container box-self">
-            <h4>Self Improvement:</h4>
-            <h6 class="hover-instructions">Hover mouse to learn more</h6>
-            <p>Continuing education</p>
-            <p>Personal goals</p>
-            <p>Talent Development</p>
-            <p>New Skills</p>
-            <p>Hobbies & Interests</p>
-        </div>
-
-        <div class="home-box-container box-power">
-            <h4>Higher Power:</h4>
-            <h6 class="hover-instructions">Hover mouse to learn more</h6>
-            <p>Spirituality</p>
-            <p>Charity</p>
-            <p>Community service</p>
-            <p>Meditation/Prayer</p>
-            <p>Support a cause</p>
-        </div>
-
-        <div class="clear6"></div>
-    </div>
-
-	<?php
-}
-
-add_action('genesis_before_content_sidebar_wrap',  'home_boxes_one', 12);
+add_action('genesis_before_content_sidebar_wrap',  'balance_boxes', 12);
 
 function home_cta_one() {
     ?>
@@ -240,7 +165,7 @@ function home_separator_two() {
 	?>
     <div class="image-separator-fs" style="background-image: url('<?php  echo home_url(); ?>/wp-content/uploads/2018/09/Home2.jpg');">
         <div class="separator-contact-inner">
-            <?php tagline_bullets(); ?>
+            <?php tagline_bullets('image'); ?>
             <a href="#" class="button contact-trigger">Contact Us</a>
         </div>
     </div>
@@ -299,13 +224,7 @@ function home_separator_three() {
 
 add_action('genesis_after_entry', 'home_separator_three', 17);
 
-function tagline_bullets() {
-	?>
-    <div class="tagline-bullets">
-        <h2>Higher Productivity | Better Relationships | More Profits </h2>
-    </div>
-	<?php
-}
+
 
 
 function home_testimonials() {
@@ -372,10 +291,6 @@ function home_footer() {
 }
 
 add_action('genesis_after_entry', 'home_footer', 19);
-
-
-
-
 
 genesis();
 

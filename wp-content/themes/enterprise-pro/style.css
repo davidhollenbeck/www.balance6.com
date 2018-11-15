@@ -277,6 +277,15 @@ hr {
 	position:relative;
 }
 
+.image-separator-fs .image-separator-top {
+	background-position:top;
+}
+
+.image-separator-fs .image-separator-bottom {
+	background-position:bottom;
+}
+
+
 .image-separator-fs .image-quote {
 	color:#fff;
 	font-style:italic;
@@ -934,13 +943,13 @@ img.alignnone,
 a.alignleft,
 img.alignleft,
 .wp-caption.alignleft {
-	margin: 0 24px 12px 0;
+	margin: 0 50px 12px 0;
 }
 
 a.alignright,
 img.alignright,
 .wp-caption.alignright {
-	margin: 0 0 12px 24px;
+	margin: 0 0 12px 50px;
 }
 
 .wp-caption-text {
@@ -1450,7 +1459,7 @@ Content Area
 
 /* Home Page
 --------------------------------------------- */
-.home-hero {
+.hero {
 	background-size:cover;
 	height:500px;
 	background-position:right bottom;
@@ -1466,27 +1475,12 @@ Content Area
 	position:relative;
 }
 
-.hero-logo, .hero-text {
+.hero-text {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 
 
-}
-
-.hero-logo {
-	float:right;
-	margin-right:50px;
-	background-color:rgba(255,255,255,0.3);
-	-webkit-box-shadow: 10px 10px 80px 50px rgba(255,255,255,0.3);
-	-moz-box-shadow: 10px 10px 80px 50px rgba(255,255,255,0.3);
-	box-shadow: 10px 10px 80px 50px rgba(255,255,255,0.3);
-	display:none;
-
-}
-
-.hero-logo img {
-	max-height:375px;
 }
 
 .hero-text {
@@ -1509,8 +1503,6 @@ Content Area
 	color:#0e74bb;
 	font-size:24px;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.06);
-	font-weight:400;
-
 	font-weight:700;
 }
 
@@ -1595,7 +1587,6 @@ Content Area
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius:5px;
-	min-height:40px;
 	transition: all .5s;
     min-height:450px;
 }
@@ -1788,8 +1779,6 @@ Content Area
 	text-align:center;
 }
 
-
-
 .tagline-bullets {
 	text-align: center;
 	max-width: 1200px;
@@ -1797,6 +1786,13 @@ Content Area
 	margin-right: auto;
 	margin-top:70px;
 	margin-bottom:70px;
+}
+
+.tagline-bullets.no-image {
+	margin-top:0;
+	margin-bottom:0;
+	padding:50px 10px;
+	background-color:#98c93b;
 }
 
 .tagline-bullets img {
@@ -1813,6 +1809,29 @@ Content Area
 	font-size:45px;
 	color:#fff;
 	text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+/* Services
+--------------------------------------------- */
+
+.services-hero {
+
+}
+
+
+
+.b6-inner-row {
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:50px;
+}
+
+.b6-vidloop {
+	position: relative;
+}
+.b6-vidloop-container {
+	max-width: 100%;
 }
 
 /* Entries
@@ -2564,6 +2583,14 @@ Media Queries
 		max-width:800px;
 	}
 
+	img.alignright, img.alignleft {
+		float:none;
+		max-width:100%;
+		width:400px;
+		margin:25px;
+		display:block;
+	}
+
 }
 
 @media only screen and (max-width:850px) {
@@ -2611,6 +2638,10 @@ Media Queries
 
 	.home-hero {
 		background-position:left bottom;
+	}
+
+	.services-hero {
+		background-position: left top;
 	}
 
 	.archive-pagination li a {
@@ -2817,6 +2848,7 @@ Media Queries
 	.image-separator-fs .separator-contact-inner {
 		transform:translateY(50%);
 	}
+
 }
 
 @media screen and (max-width:525px) {
